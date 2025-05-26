@@ -1,13 +1,6 @@
 # StorySidekick 📖🤖
-**StorySidekick** egy magyar nyelvű könyvajánló chatbot, amely **Flask**-et és **huBERT** NLP-t használ.
-
-## 🚀 Telepítés
-1️⃣ Klónozd a repót: ```bash git clone https://github.com/NagypalMarton/StorySidekick.git cd StorySidekick
-```
-
-## StorySidekick – Magyar könyvajánló chatbot
-
-Ez egy Flask + Bootstrap alapú magyar nyelvű chatalkalmazás, amely könyvajánló chatbotként működik. A felhasználó könyvcímre vagy kérdésre választ kap a moly.hu API-ból lekért könyvleírás alapján, természetes nyelvi válasszal.
+## Magyar könyvajánló chatbot
+**StorySidekick** egy magyar nyelvű könyvajánló chatbot, amely **Flask**-et és **huBERT** NLP-t használ.Ez egy Flask + Bootstrap alapú magyar nyelvű chatalkalmazás, amely könyvajánló chatbotként működik. A felhasználó könyvcímre vagy kérdésre választ kap a moly.hu API-ból lekért könyvleírás alapján, természetes nyelvi válasszal.
 
 ### Fő funkciók
 
@@ -18,6 +11,10 @@ Ez egy Flask + Bootstrap alapú magyar nyelvű chatalkalmazás, amely könyvajá
 - **QA modell**: mcsabai/huBert-fine-tuned-hungarian-squadv2 pipeline, fix összefoglaló kérdéssel
 - **Válasz deduplikálása**: a QA pipeline topk=3 válaszait mondatonként deduplikálja, így természetesebb, informatívabb ismertetőt ad
 - **Hibakezelés**: ha nincs találat vagy leírás, megfelelő üzenet
+
+## 🚀 Telepítés
+1️⃣ Klónozd a repót: ```bash git clone https://github.com/NagypalMarton/StorySidekick.git cd StorySidekick
+```
 
 ### Használat
 
@@ -32,7 +29,6 @@ Ez egy Flask + Bootstrap alapú magyar nyelvű chatalkalmazás, amely könyvajá
    ```sh
    python app.py
    ```
-
 1. Nyisd meg a böngészőben: [http://localhost:5000](http://localhost:5000)
 
 ### Példák
@@ -60,7 +56,3 @@ Ez egy Flask + Bootstrap alapú magyar nyelvű chatalkalmazás, amely könyvajá
 - Több szerző, alternatív címek kezelése
 - Hosszabb leírások feldarabolása
 - Válaszminőség további javítása (pl. summarization pipeline integrálása)
-
----
-
-**Készítette:** [A projekt fejlesztője]
